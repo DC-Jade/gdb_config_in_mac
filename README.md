@@ -52,7 +52,7 @@ from libstdcxx.v6.printers import register_libstdcxx_printers
 register_libstdcxx_printers (None)
 end
 " >> ~/.gdbinit
-cd ../src
+cd ./src
 g++ -gdwarf-3 test.cpp -o ../bin/a.out
 sudo gdb ../bin/a.out
 ```
