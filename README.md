@@ -44,6 +44,10 @@ sudo gdb a.out
 ## solution3 - config python printer and make with ‘-gdwarf-3’
 
 ```bash
+# find python printer 
+find / -iname "*libstdcxx*" 2>/dev/null
+
+# replace path with parent directory of the above result
 echo "
 python
 import sys 
